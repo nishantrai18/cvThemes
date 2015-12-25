@@ -97,7 +97,7 @@ Last Updated on \today % Last Updated text
 %----------------------------------------------------------------------------------------
 
 \newcommand{\emphasize}[1]{ % Used for emphasizing text
-\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#1} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\selectfont {#1} \normalfont}
 
 \newcommand{\lgbf}[1]{ % Light bold, for highliting important phrases
 \color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#1} \normalfont}
