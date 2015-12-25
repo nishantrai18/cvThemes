@@ -78,7 +78,7 @@ Last Updated on \today % Last Updated text
 \newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
@@ -91,6 +91,17 @@ Last Updated on \today % Last Updated text
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+
+%----------------------------------------------------------------------------------------
+%	TEXT STYLING
+%----------------------------------------------------------------------------------------
+
+\newcommand{\emphasize}[1]{ % Used for emphasizing text
+\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#1} \normalfont}
+
+\newcommand{\lgbf}[1]{ % Light bold, for highliting important phrases
+\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#1} \normalfont}
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
