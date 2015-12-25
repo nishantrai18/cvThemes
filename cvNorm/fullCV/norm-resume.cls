@@ -2,13 +2,13 @@
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{norm-resume}[2015/12/25 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.27cm, vmargin=1.27cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
 %----------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+\begin{textblock}{25}(72,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
 Last Updated on \today % Last Updated text
 \end{textblock}}
@@ -51,17 +51,20 @@ Last Updated on \today % Last Updated text
 %	MAIN HEADING COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\namesection}[3]{ % Defines the command for the main heading
+\newcommand{\namesection}[4]{ % Defines the command for the main heading
 \centering{ % Center the name
-\fontsize{40pt}{60pt} % Font size
+\fontsize{30pt}{45pt} % Font size
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
-} \\[5pt] % Whitespace between the name and contact information
-\centering{ % Center the contact information
+\hfill 
 \color{headings} % Use the headings color
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
-\vspace{-5pt} % Reduce whitespace after the rule slightly
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3  % Contact information font
+\hfill
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4} % Contact information font
+\vspace{-5mm} % Reduce whitespace after the rule slightly
+\noindent\makebox[\linewidth]{\color{headings}\rule{0.9\paperwidth}{0.4pt}} % Horizontal rule
+\vspace{-5mm}
+\noindent\makebox[\linewidth]{\color{headings}\rule{0.9\paperwidth}{0.4pt}} % Horizontal rule
 }
 
 %----------------------------------------------------------------------------------------
