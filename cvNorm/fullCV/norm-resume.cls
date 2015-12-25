@@ -54,8 +54,8 @@ Last Updated on \today % Last Updated text
 \newcommand{\namesection}[4]{ % Defines the command for the main heading
 \centering{ % Center the name
 \fontsize{30pt}{45pt} % Font size
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
-\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
+\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 % First name font
+\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2 % Last name font
 \hfill 
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3  % Contact information font
