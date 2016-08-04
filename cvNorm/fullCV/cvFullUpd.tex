@@ -79,13 +79,13 @@
 \vspace{2mm} %Some space
 
 \runnormsubsection{Partial Multi-View Clustering Using Graph Regularized NMF}				\descript{Accepted}
-\duration{Nishant Rai, Sumit Negi, Santanu Chaudhury, Om Deshmukh}{Dec '16}
+\duration{Nishant Rai, Sumit Negi, Santanu Chaudhury, Om Deshmukh}{Jul '16}
 \location{23rd International Conference on Pattern Recognition}
 
 \vspace{2mm} %Some space
 
 \runnormsubsection{Evolving structure of the Maritime Trade Network}				\descript{Accepted}
-\duration{Zuzanna Kosowska-Stamirowska, César Ducruet, Nishant Rai}{}
+\duration{Zuzanna Kosowska-Stamirowska, César Ducruet, Nishant Rai}{May '16}
 \location{Journal of Shipping and Trade}
 
 \vspace{1mm}	% Some space before next section
@@ -151,8 +151,7 @@
 	\item Literature Survey on \textbf{existing work} and \textbf{Variants} of Multi View Clustering; \textbf{Partial/Constrained Multi View Clustering}.
 	\item Studied various algorithms for optimization including \textbf{Greedy Coordinate Descent}, \textbf{Alternating Least Squares}, Method of \textbf{alternate Optimizations}, \textbf{Augmented Lagrangian} methods. \textbf{Formulated update rules} for our methods based on them.
 	\item Proposed, implemented and evaluated several models to tackle the Partial Multi View problem. \textbf{Outperform} existing models.
-	\item Artificially created Partial View data and ran experiments on them. Used both \textbf{Image} and \textbf{Textual} data to analyze the performance of our algorithms with previous work according to different clustering metrics.
-	\item Studied the effect of \textbf{Graph Regularization} on the results and the effect of \textbf{varying Kernels} on it. 	
+	\item Studied the effect of \textbf{Graph Regularization} on the results and the effect of \textbf{varying Kernels} on it, on multiple \textbf{Image} and \textbf{Textual} datasets. 	
 	}
 	\end{tightitemize}	
 	}
@@ -202,6 +201,25 @@
 \section{Projects \hrulefill}
 
 \vspace{2mm} %Some space
+
+	\runsubsection{ChaLearn: Apparent Personality Analysis through Videos:}
+	\descript{Jun '16 - Jul '16}
+	\begin{tightitemize}
+	\small
+	{
+	\item Project for challenge hosted for \textbf{ChaLearn Looking at People, ECCV '16 workshop}. Secured \textbf{6\textsuperscript{th}} place amongst \textbf{85} teams.
+	\item Challenge aimed at recognizing \textbf{personality traits} of users in \textbf{short video} sequences (15 secs).
+	\item Our method titled \textbf{"Multi-modal Approaches for Personality Analysis through Videos"} constructs multiple models using different modalities and performs \textbf{late feature fusion} in order to predict the traits.
+	\item Preprocessing of videos involves \textbf{Face detection} followed by \textbf{Facial Landmark} alignment.
+	\item Experimented with \textbf{multiple} visual feature based models including \textbf{Background-Context} and \textbf{Facial feature} models.
+	\item \textbf{Visual features} computed using \textbf{CNNs} trained on video frames. Also experimented with activations of the last layer of \textbf{VGG-Net}.
+	\item \textbf{Audio features} used same as the one used in \textbf{INTERSPEECH 2010} Paralinguistic Challenge. Audio clips broken into \textbf{multiple segments}. Experimented with various \textbf{pooling} methods and \textbf{regressors} for the final prediction.
+	\item Multiple methods used for \textbf{combining} the \textbf{frame-wise predictions} to extract the final results. More details available in \textbf{report} online.
+	\item \textbf{Stacking} and \textbf{Blending} performed to fuse the Multi-Modal predictions. Results \textbf{much better} than models using a single modality.
+	}
+	\end{tightitemize}
+
+	\vspace{2mm}
 
 	\runsubsection{Deep Learning for Visual Question Answering:}				
 	\descript{Mar '16 - Apr '16}	
@@ -318,19 +336,7 @@
 	\end{tightitemize}
  		
 	\vspace{2mm}
-		
-	\runsubsection{News Report Classification:}   \descript{Jan '14 - Apr '14}
-	\begin{tightitemize}
-	\small
-	{
-	\item Project aimed at \textbf{classifying news articles} into various categories.
-	\item Trained \textbf{Naive Bayes Classifier} after processing the article text (\textbf{Tokenisation, Stemming, removing Stopwords}, etc)
-	\item Implemented \textbf{K Nearest Neighbors} and \textbf{automated scraping} of online news articles for collection of Training data.
-	}
-	\end{tightitemize}
- 		
-	\vspace{2mm}
-	
+			
 	\runsubsection{Sentiment Analysis of Social Media:}   \descript{Aug' 14}
 	\begin{tightitemize}
 	\small
@@ -347,8 +353,11 @@
 	\begin{tightitemize}
 	\small
 	{
+	\item Developed a bot to play \textbf{Othello}, based on \textbf{Minimax} algorithm. \textbf{Alpha-beta Pruning} performed to speed up computations. Secured \textbf{19\textsuperscript{th}} place amongst \textbf{2000+} participants from over the world.
+	\item Designed a bot to play \textbf{Battleship}. A \textbf{probabilistic model} of the ships and board used to decide the next move.
 	\item Created models for \textbf{Predicting Search trends}, \textbf{Topic Assignment} based on keywords, \textbf{Spam Detection} and \textbf{Multi-Label Question} classification (Tested on questions taken from \textbf{Quora}).
-	\item Implemented a \textbf{Captcha Decoder}, able to work with some level of noise. \textbf{Clustering} and \textbf{Segmentation} based methods used for extracting candidate regions containing characters.
+	\item \textbf{News Report Classification} completed during {\textbf{Jan '14 - Apr '14}} under \textbf{Association of Computing Activities}.
+	\item Designed a \textbf{Captcha Decoder}, able to work with occlusions. \textbf{Clustering} and \textbf{Segmentation} based methods used for extracting \textbf{candidate regions} containing characters. Further passed through a classifier for confirmation.
 	\item Completed project to discover patterns and trends about the \textbf{New York Subway}, under the \textbf{Udacity} course: \textbf{Intro to Data Science}.
 	}
 	\end{tightitemize}		
