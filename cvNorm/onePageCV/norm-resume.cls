@@ -53,7 +53,7 @@ Last Updated on \today % Last Updated text
 
 \newcommand{\namesection}[4]{ % Defines the command for the main heading
 \centering{ % Center the name
-\fontsize{30pt}{45pt} % Font size
+\fontsize{25pt}{40pt} % Font size
 \fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 % First name font
 \fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2 % Last name font
 \hfill 
@@ -86,11 +86,14 @@ Last Updated on \today % Last Updated text
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
-\newcommand{\runnormsubsection}[1]{ % Used for creating subsections where a description is required on the same line
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
+\newcommand{\smhead}[1]{ % Used for creating subsections where a description is required on the same line
+\color{subheadings}\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont{#1} \normalfont}
 
 \newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {\hfill #1\\} \normalfont}
+
+\newcommand{\smdescript}[1]{ % Used for describing the subsection on the same line
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {\hfill #1\\} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
